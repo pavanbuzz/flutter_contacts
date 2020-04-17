@@ -387,6 +387,7 @@ public class SwiftContactsServicePlugin: NSObject, FlutterPlugin {
         default: return labelValue
         }
     }
+    
     func getPostalAddressLabel(label:String?) -> String{
         let labelValue = label ?? ""
         switch(labelValue){
