@@ -1,3 +1,33 @@
+## [0.4.2] - April 21, 2020
+
+* Two methods have been added to handle creating and editing contacts with device contact form (@engylemure)
+
+## [0.4.1] - April 21, 2020
+
+* @sperochon
+  * Android: retrieve correct custom phone labels
+  * iOS: add localizedLabels parameter to avoid labels translations
+  * Android: retrieve correct custom phone labels (refactor)
+  * iOS: recognize emails predefined labels (work,home,other) when adding a contact to device contacts
+  * Fixed issue: birthday not imported (Android only)
+  * Fixed issue: birthday not imported (iOS only) and export the same data as Android '--MM-dd' for birthday without year
+
+* @pavanbuzz
+  * Get contacts based on matching email available on iOS
+  * Fixed contacts_test as it was broken from staging branch
+  * Fixed slowness in get contact for iOS 11+
+  * Fixed getContacts with phoneQuery to use predicates which are available from iOS 11
+
+## [0.4.0] - March 30, 2020
+
+* Migrated the plugin to android v2 embedding and migrated androidx for example app (@lidongze91)
+
+## [0.3.10] - December 6, 2019
+
+* Expose the raw account type (e.g. "com.google" or "com.skype") and account name on Android (@joachimvalente)
+* Added additional labels for work, home, and other for PhoneLabel (@pavanbuzz)
+* Added additional labels for work, home, and other for PostalAddress (@pavanbuzz)
+
 ## [0.3.9] - November 12, 2019
 
 * Expose androidAccountType as enum in dart (@lidongze91)
